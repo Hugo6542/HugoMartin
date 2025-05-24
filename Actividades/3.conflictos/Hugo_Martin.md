@@ -38,5 +38,39 @@ Switched to a new branch 'suprema'
 
 3. Muévete a la rama suprema. (Puede usar el comando git checkout).
 
+   C:\Users\Usuario\HugoMartin>git checkout suprema
+Already on 'suprema'
+
+C:\Users\Usuario\HugoMartin>git branch
+  main
+  rama-local
+* suprema
+
+5. "Comité" los cambios. (Puede usar el comando git commit -am "Cambio de lomo a pollo").
+C:\Users\Usuario\HugoMartin>git commit -am "Cambio de lomo a pollo"
+On branch suprema
+nothing to commit, working tree clean
+
+6. Muévete a la rama master. (Puede usar el comando git checkout).
+
+   C:\Users\Usuario\HugoMartin>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+7. Crear una nueva sucursal bifea partir de la sucursal master. (Puede usar el comando git checkout -b bife).
+
+   C:\Users\Usuario\HugoMartin>git checkout -b bife
+Switched to a new branch 'bife'
+
+8. Muévete a la rama bife. (Puede usar el comando git checkout).
+
+   C:\Users\Usuario\HugoMartin>git checkout -b bife
+Switched to a new branch 'bife'
+
+C:\Users\Usuario\HugoMartin>git checkout bife
+Already on 'bife'
+
+10. Haga un git diff master supremay un git diff master bife. ¿Qué observa?
+
    
 
