@@ -107,6 +107,10 @@ pollo
 
 15. Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
     
+sarten rallada
+bife
+
+  
 
    
 
