@@ -72,5 +72,41 @@ Already on 'bife'
 
 10. Haga un git diff master supremay un git diff master bife. ¿Qué observa?
 
+¿Qué observas?
+Ambas ramas cambian la misma línea: lomo → pollo y lomo → bife.
+
+Esto indica que habrá un conflicto al fusionar ambas.
+
+11. Muévete a la rama master. Corra un git status, ¿qué observa?
+
+    C:\Users\Usuario\HugoMartin>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Main está limpio, sin cambios.
+
+12. Ejecutar git merge bife. ¿Funcionó?
+
+    Sí, porque master no cambió esa línea y bife sí → Git lo puede aplicar sin conflicto.
+
+    13. Ejecutar git merge suprema. ¿Funcionó?
+   
+        No, aparece un conflicto, porque:
+
+master ya tiene "bife".
+
+suprema intenta poner "pollo" en la misma línea
+
+14. Ejecutar git status. ¿Que observa?
+
+    El archivo está en conflicto, con marcadores como: <<<<<<< HEAD
+bife
+=======
+pollo
+>>>>>>> suprema
+
+15. Vea el contenido del archivo 3.conflicts/milanesa.txt. ¿Qué observa?
+    
+
    
 
