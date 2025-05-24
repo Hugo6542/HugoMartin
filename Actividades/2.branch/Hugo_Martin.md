@@ -206,6 +206,15 @@ pizza
 
 27. Ver la etiqueta pizza. (Puede usar el comando git show pizza).
 
+
+    Detalles del commit donde se colocó la etiqueta.
+
+Mensaje de commit.
+
+Cambios realizados.
+
+Autor y fecha.
+
     
 
 
