@@ -136,8 +136,77 @@ C:\Users\Usuario\IESlaCa-uelaAWEB>git commit -m "He añadido cebolla a la pizza"
 |/
 | * f6d0240 (experimento) He añadido oregano a la pizza
 | * af8f154 he añadido el ingrediente oregano
-|/        
+|/       
 
   
+15.Correr el comando git graph y observar el resultado. ¿Qué observa?
+
+* baff275 (HEAD -> main, origin/main, origin/HEAD) Create Hugo_Martin.md
+
+
+16. ¿Qué sucursales están "fusionadas" con un maestro? (Puede usar el comando git branch --merged).
+
+C:\Users\Usuario\HugoMartin>git branch --merged
+* main
+  rama-local
+
+
+  17. Haga un merge de la rama experimentoa la rama master. (Puede usar el comando git merge experimento).
+ 
+      C:\Users\Usuario\HugoMartin>git merge experimento
+merge: experimento - not something we can merge
+
+18. Correr el comando git graphy observar el resultado. ¿Qué observa?
+
+    C:\Users\Usuario\HugoMartin>git graph
+* baff275 (HEAD -> main, origin/main, origin/HEAD) Create Hugo_Martin.md
+
+19. ¿Tuvo que hacer un merge manual, o git lo hizo automáticamente? ¿Por qué?
+
+    en este caso, los cambios probablemente se superponen (sobre el queso, debajo del queso), así que seguramente fue necesario un merge manual.
+
+    20.¿Qué sucursales están "fusionadas" con un maestro? (Puede usar el comando git branch --merged).
+
+    Lista de ramas ya fusionadas a la rama actual (master).
+
+    21. Eliminar la rama anana. (Puede usar el comando git branch -d anana).
    
+        C:\Users\Usuario\HugoMartin>git branch -d anana
+Deleted branch anana (was baff275).
+
+22 Eliminar la rama experimento. (Puede usar el comando git branch -d experimento).
+
+    C:\Users\Usuario\HugoMartin>git branch -d experimento
+Deleted branch experimento (was baff275).
+
+23. ¿Qué sucursales están "fusionadas" con un maestro? (Puede usar el comando git branch --merged).
+
+Solo master (y tal vez otras ramas internas como main o origin/...).
+
+Ya no aparece anana ni experimento porque fueron eliminadas.
+
+24. Correr el comando git graphy observar el resultado. ¿Qué observa?
+
+    Una línea principal (master) con dos merges:
+
+Uno desde anana
+
+Otro desde experimento
+
+Puede haber commits de merge (conectando ramas).
+
+Las ramas eliminadas no se ven como etiquetas, solo quedan los commits en la historia.
+
+25. Crea una etiqueta pizzaen el último commit. (Puede usar el comando git tag -a pizza -m "Receta de la pizza."").
+
+    C:\Users\Usuario\HugoMartin>git tag -a pizza -m "Receta de la pizza."
+
+C:\Users\Usuario\HugoMartin>git tag
+pizza
+
+27. Ver la etiqueta pizza. (Puede usar el comando git show pizza).
+
+    
+
+
 
